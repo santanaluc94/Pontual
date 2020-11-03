@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "outDir": "./dist/public/js",
+    "target": "es6",
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "dist/public/ts/**/*.ts"
+  ]
+}

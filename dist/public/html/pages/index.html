@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- build:css -->
+    <link rel="stylesheet" type="text/css" href="css/index/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/index/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/index/modal_entrar.css" />
+    <!-- endbuild -->
+
+    <!-- build:js -->
+    <script type="text/javascript" src="js/index/index.js"></script>
+    <!-- endbuild -->
+
+    <title>Pontual</title>
+</head>
+
+<body>
+    <header>
+        <nav class="index-menu">
+            <ul>
+                <li>
+                    <a href="#sobre">Sobre a projeto</a>
+                </li>
+                <li>
+                    <a href="#manual">Manual</a>
+                </li>
+                <li>
+                    <a href="#desenvolvimento">Desenvolvedor</a>
+                </li>
+                <li>
+                    <a href="#modal_entrar">Entrar</a>
+                </li>
+                <li>
+                    <a href="#modal_registrar">Registrar</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section>
+        <article id="sobre">
+            <p>
+                Este projeto é um relógio de ponto, que permite inserir apontamento diário, edição de apontamentos
+                anteriores (apenas do mês atual), dados do usuário, histórico de apontamentos, solicitação de férias
+                (não podem aplicar apontamentos nos dias marcados como férias) e programação de dias não uteis
+                (incluindo feriados, eventos da empresa, entre outras datas especiais).
+            </p>
+            <p>
+                A ideia do projeto é contemplar os objetivos acima, podendo ser extendido ou modificado conforme a
+                necessidade de nova(s) funcionalidade(s), ou remoção(ões) de alguma(s) funcionalidade(s) já definida(s),
+                ou sugestão de alguma funcionalidade sugerida pela comunidade.
+            </p>
+            <p>
+                O objetivo do projeto é o aperfeiçoamento pessoal do desenvolvedor nas práticas de Javascript,
+                aprendizagem do framework Node.js e da ferramenta Gulp.
+            </p>
+        </article>
+        <article id="manual">
+            <p>
+                <span class="phrase-bold">O projeto ainda está em desenvolvimento.</span>
+            </p>
+            <p>
+                <span class="phrase-bold">O manual será incrementado conforme as funcionalidades forem
+                    criadas.</span>
+            </p>
+        </article>
+        <article id="desenvolvimento">
+            <p>
+                Para o desenvolvimento do backend esté projeto será desenvolvido em Node.js utilizando um banco de dados
+                MongoDB para o armazenamento de dados.
+            </p>
+            <p>
+                Para a realização do frontend está sendo utilizado HTML, Javascript e Less (sendo utilizado o Gulp para
+                o processamento do CSS em Less).
+            </p>
+            <p>
+                O projeto está disponível nesse <a href="https://github.com/santanaluc94" target="_blank">Github</a>
+                para qualquer um que queria utilizar um relógio de ponto, podendo
+                ser utilizado individualmente ou para uma empresa.
+            </p>
+        </article>
+    </section>
+
+    <footer></footer>
+
+    <!-- The Modal Entrar -->
+    <div id="modal_entrar" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+        </div>
+    </div>
+</body>
+
+</html>
