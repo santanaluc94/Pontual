@@ -42,6 +42,8 @@ gulp.task('concatCss', function () {
     return gulp.src([
             './dist/public/css/index/reset.css',
             './dist/public/css/index/styles.css',
+            './dist/public/css/index/header.css',
+            './dist/public/css/index/footer.css',
             './dist/public/css/index/modal_entrar.css'
         ])
         .pipe(concat('styles.css'))
@@ -79,8 +81,8 @@ gulp.task('buildHtml', function () {
 
     return gulp.src('./dist/public/html/pages/*.html')
         .pipe(htmlReplace({
-            css: './src/public/css/index/styles.css',
-            js: './src/public/js/script-minify.js'
+            css: '/src/public/css/index/styles.css',
+            js: '/src/public/js/index/script-min.js'
         }))
         .pipe(htmlMin({
             collapseWhitespace: true

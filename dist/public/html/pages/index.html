@@ -5,13 +5,9 @@
     <meta charset="UTF-8">
 
     <!-- build:css -->
-    <link rel="stylesheet" type="text/css" href="css/index/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/index/styles.css" />
-    <link rel="stylesheet" type="text/css" href="css/index/modal_entrar.css" />
-    <!-- endbuild -->
-
-    <!-- build:js -->
-    <script type="text/javascript" src="js/index/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="/src/public/css/index/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/src/public/css/index/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/src/public/css/index/modal_entrar.css" />
     <!-- endbuild -->
 
     <title>Pontual</title>
@@ -19,6 +15,9 @@
 
 <body>
     <header>
+        <figure class="head-left">
+            <img class="logo-site" src="/src/public/img/pontual/pontual-logo.png" />
+        </figure>
         <nav class="index-menu">
             <ul>
                 <li>
@@ -31,10 +30,10 @@
                     <a href="#desenvolvimento">Desenvolvedor</a>
                 </li>
                 <li>
-                    <a href="#modal_entrar">Entrar</a>
+                    <a id="btn_login_modal">Entrar</a>
                 </li>
                 <li>
-                    <a href="#modal_registrar">Registrar</a>
+                    <a id="btn_register_modal">Registrar</a>
                 </li>
             </ul>
         </nav>
@@ -85,7 +84,37 @@
         </article>
     </section>
 
-    <footer></footer>
+    <footer>
+        <div class="foot-top">
+            <div class="foot-top-block">
+                <h3 class="foot-title">Contato</h3>
+                <div class="foot-body">
+                    <span class="description">Tel.: (11) 9 XXXX-XXXX</span>
+                    <span class="description">Cel.: (11) XXXX-XXXX</span>
+                    <span class="description">E-mail: contato@mail.com</span>
+                </div>
+            </div>
+            <div class="foot-top-block">
+                <h3 class="foot-title"></h3>
+                <div class="foot-body">
+                    <img src="/src/public/img/icon/twitter.jpg" class="foot-logo" alt="Twitter logo">
+                    <img src="/src/public/img/icon/facebook.jpg" class="foot-logo" alt="Twitter logo">
+                    <img src="/src/public/img/icon/linkedin.jpg" class="foot-logo" alt="Twitter logo">
+                    <img src="/src/public/img/icon/instagram.jpg" class="foot-logo" alt="Twitter logo">
+                    <img src="/src/public/img/icon/whatsapp.jpg" class="foot-logo" alt="Twitter logo">
+                </div>
+            </div>
+            <div class="foot-top-block">
+                <h3 class="foot-title">Menu</h3>
+                <div class="foot-body">
+                    <span class="foot-link">Sobre o Relógio</span>
+                    <span class="foot-link">Manual</span>
+                    <span class="foot-link">Desenvolvimento</span>
+                </div>
+            </div>
+        </div>
+        <div class="foot-bottom"></div>
+    </footer>
 
     <!-- The Modal Entrar -->
     <div id="modal_entrar" class="modal">
@@ -94,6 +123,11 @@
             <p>Some text in the Modal..</p>
         </div>
     </div>
+
+
+    <!-- build:js -->
+    <script type="text/javascript" src="/src/public/js/index/script-min.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>
